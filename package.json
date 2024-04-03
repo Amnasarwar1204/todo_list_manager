@@ -1,11 +1,11 @@
 {
-  "name": "am12_todo_list_manager",
-  "version": "1.0.1",
+  "name": "am12gs_todo_list_manager",
+  "version": "1.0.2",
   "description": "",
   "main": "index.js",
   "type": "module",
   "bin": {
-    "am12_todo_list_manager": "to_do_list.js"
+    "am12gs_todo_list_manager": "to_do_list"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
