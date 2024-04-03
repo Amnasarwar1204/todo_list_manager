@@ -1,4 +1,4 @@
-#! usr/bin/env node
+#!/usr/bin/env node
 import inquirer from "inquirer"; //import inquirer
 let todos = []; //Array
 let makeTodo = await inquirer.prompt(//Making list
@@ -21,7 +21,7 @@ while (true) { //use while loop
             type: "list",
             name: "task",
             message: "select the option",
-            choices: ["Add", "update", "view", "deleate", "Exit"]
+            choices: ["Add", "update", "view", "delete", "Exit"]
         }
     ]);
     if (choose.task === "Add") { //if choose "Add"
@@ -66,7 +66,7 @@ while (true) { //use while loop
         console.log(todos);
         console.log("             *****          ");
     }
-    if (choose.task == "deleate") { //if choose "deleate"
+    if (choose.task == "delete") { //if choose "delete"
         let deleateTodo = await inquirer.prompt([
             {
                 type: "list",

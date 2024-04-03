@@ -1,4 +1,4 @@
-#! usr/bin/env node
+#!/usr/bin/env node
 
 import inquirer from "inquirer"         //import inquirer
 
@@ -29,7 +29,7 @@ let choose = await inquirer.prompt(                // select one option
             type:"list",
             name:"task",
             message:"select the option",
-            choices: ["Add","update","view","deleate", "Exit"]
+            choices: ["Add","update","view","delete", "Exit"]
             
         }
     ])
@@ -95,7 +95,7 @@ console.log(todos);}
 }
 
 
-if (choose.task == "deleate"){                       //if choose "deleate"
+if (choose.task == "delete"){                       //if choose "delete"
 let deleateTodo = await inquirer .prompt(
     [
         {
